@@ -16,13 +16,39 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_White" translatesAutoresizingMaskIntoConstraints="NO" id="HUH-qg-UmK">
+                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="D13-Iw-qvT"/>
+                                    <constraint firstAttribute="width" constant="250" id="DwG-pY-Lix"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inter Connect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYq-Iq-vcI">
+                                <rect key="frame" x="209" y="442" width="183" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HUH-qg-UmK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="D8x-lE-YyD"/>
+                            <constraint firstItem="RYq-Iq-vcI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dHU-DC-8y6"/>
+                            <constraint firstItem="HUH-qg-UmK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wna-On-AxJ"/>
+                            <constraint firstItem="RYq-Iq-vcI" firstAttribute="top" secondItem="HUH-qg-UmK" secondAttribute="bottom" constant="17" id="zFX-Pj-Rp7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="185" y="373"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_White" width="512" height="512"/>
+    </resources>
 </document>
